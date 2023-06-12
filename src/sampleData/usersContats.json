@@ -1,0 +1,22 @@
+[
+  {
+    "contactId": 1,
+    "contactName": "test contact 1 for John",
+    "contactNumber": "+48465423687"
+  },
+  {
+    "contactId": 2,
+    "contactName": "test contact 2 for John",
+    "contactNumber": "+48576345674"
+  },
+  {
+    "contactId": 3,
+    "contactName": "test contact 3 for John",
+    "contactNumber": "+48523708864"
+  },
+  {
+    "contactId": 4,
+    "contactName": "test add contact",
+    "contactNumber": "+48678190231"
+  }
+]
