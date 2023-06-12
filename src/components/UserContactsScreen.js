@@ -4,7 +4,7 @@ import MyListItem from "./MyListItem";
 
 async function addContact(request, context) {
     console.log(request)
-    return fetch('http://localhost:8080/contacts/add/contact/' + context.userId, {
+    return fetch('https://ztiprojectbackend-production.up.railway.app/contacts/add/contact/' + context.userId, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -16,7 +16,7 @@ async function addContact(request, context) {
 
 async function queryForMyContacts(request) {
     console.log(request)
-    return fetch('http://localhost:8080/contacts/getAllUserContacts/' + request.userId, {
+    return fetch('https://ztiprojectbackend-production.up.railway.app/contacts/getAllUserContacts/' + request.userId, {
         method: 'GET',
         headers: {
             'Content-Type': 'application/json'
@@ -26,7 +26,7 @@ async function queryForMyContacts(request) {
 }
 async function queryForMyFilteredContacts(request) {
     console.log(request)
-    return fetch('http://localhost:8080/contacts/getAllUserContacts/' + request.userId +'/filteredByName/'+request.contactName , {
+    return fetch('https://ztiprojectbackend-production.up.railway.app/contacts/getAllUserContacts/' + request.userId +'/filteredByName/'+request.contactName , {
         method: 'GET',
         headers: {
             'Content-Type': 'application/json'
@@ -37,7 +37,7 @@ async function queryForMyFilteredContacts(request) {
 
 
 async function NameAsc(context) {
-    return fetch('http://localhost:8080/contacts/getAllUserContacts/' + context.userId + '/sortedByNameASC', {
+    return fetch('https://ztiprojectbackend-production.up.railway.app/contacts/getAllUserContacts/' + context.userId + '/sortedByNameASC', {
         method: 'GET',
         headers: {
             'Content-Type': 'application/json'
@@ -47,7 +47,7 @@ async function NameAsc(context) {
 }
 
 async function NameDesc(context) {
-    return fetch('http://localhost:8080/contacts/getAllUserContacts/' + context.userId + '/sortedByNameDESC', {
+    return fetch('https://ztiprojectbackend-production.up.railway.app/contacts/getAllUserContacts/' + context.userId + '/sortedByNameDESC', {
         method: 'GET',
         headers: {
             'Content-Type': 'application/json'
@@ -57,7 +57,7 @@ async function NameDesc(context) {
 }
 
 async function NumberDESC(context) {
-    return fetch('http://localhost:8080/contacts/getAllUserContacts/' + context.userId + '/sortedByNumberDESC', {
+    return fetch('https://ztiprojectbackend-production.up.railway.app/contacts/getAllUserContacts/' + context.userId + '/sortedByNumberDESC', {
         method: 'GET',
         headers: {
             'Content-Type': 'application/json'
@@ -67,7 +67,7 @@ async function NumberDESC(context) {
 }
 
 async function NumberASC(context) {
-    return fetch('http://localhost:8080/contacts/getAllUserContacts/' + context.userId + '/sortedByNumberASC', {
+    return fetch('https://ztiprojectbackend-production.up.railway.app/contacts/getAllUserContacts/' + context.userId + '/sortedByNumberASC', {
         method: 'GET',
         headers: {
             'Content-Type': 'application/json'

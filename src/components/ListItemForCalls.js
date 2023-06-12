@@ -4,7 +4,7 @@ import { format } from 'date-fns';
 
 async function deleteCallFromDB(request) {
     console.log(request)
-    return fetch('http://localhost:8080/talk/deletecall', {
+    return fetch('https://ztiprojectbackend-production.up.railway.app/talk/deletecall', {
         method: 'DELETE',
         headers: {
             'Content-Type': 'application/json'

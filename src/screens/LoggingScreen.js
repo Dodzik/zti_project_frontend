@@ -3,7 +3,7 @@ import {Link, useNavigate } from "react-router-dom";
 import {Card, Form} from "react-bootstrap";
 
 async function loginUser(credentials) {
-    return fetch('http://localhost:8080/user/login', {
+    return fetch('https://ztiprojectbackend-production.up.railway.app/user/login', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

@@ -17,7 +17,7 @@ import UserProfileScreen from "../components/UserProfileScreen";
 
 async function queryForMyContacts(request) {
     console.log(request)
-    return  fetch('http://localhost:8080/contacts/getAllUserContacts/'+request.userId, {
+    return  fetch('https://ztiprojectbackend-production.up.railway.app/contacts/getAllUserContacts/'+request.userId, {
         method: 'GET',
         headers: {
             'Content-Type': 'application/json'
@@ -27,7 +27,7 @@ async function queryForMyContacts(request) {
 }
 async function queryForAllMyCalls(request) {
     console.log(request)
-    return  fetch('http://localhost:8080/talk/getAllCalls/'+request.userId, {
+    return  fetch('https://ztiprojectbackend-production.up.railway.app/talk/getAllCalls/'+request.userId, {
         method: 'GET',
         headers: {
             'Content-Type': 'application/json'
@@ -38,7 +38,7 @@ async function queryForAllMyCalls(request) {
 
 async function getUserInfo(request) {
     console.log(request)
-    return fetch('http://localhost:8080/user/getUserInfo', {
+    return fetch('https://ztiprojectbackend-production.up.railway.app/user/getUserInfo', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -47,18 +47,6 @@ async function getUserInfo(request) {
     })
         .then(data => data.json())
 }
-// async function queryForMyProfile(request) {
-//     console.log(request)
-//     return  fetch('http://localhost:8080/api/myGroups', {
-//         method: 'POST',
-//         headers: {
-//             'Content-Type': 'application/json'
-//         },
-//         body: JSON.stringify(request)
-//     })
-//         .then(data => data.json())
-//
-// }
 
 function UserPanelScreen(context){
     const [profile, setProfile] = useState(false);

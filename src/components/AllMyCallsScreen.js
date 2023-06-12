@@ -4,7 +4,7 @@ import ListItemForCalls from "./ListItemForCalls";
 
 async function addCall(request, context) {
     console.log(request)
-    return fetch('http://localhost:8080/talk/createCall/' + context.userId, {
+    return fetch('https://ztiprojectbackend-production.up.railway.app/talk/createCall/' + context.userId, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -15,7 +15,7 @@ async function addCall(request, context) {
 }
 async function queryForAllMyCalls(request) {
     console.log(request)
-    return  fetch('http://localhost:8080/talk/getAllCalls/'+request.userId, {
+    return  fetch('https://ztiprojectbackend-production.up.railway.app/talk/getAllCalls/'+request.userId, {
         method: 'GET',
         headers: {
             'Content-Type': 'application/json'

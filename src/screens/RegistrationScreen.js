@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {Card, Form} from "react-bootstrap";
 
 async function loginUser(credentials) {
-    return fetch('http://localhost:8080/user/register', {
+    return fetch('https://ztiprojectbackend-production.up.railway.app/user/register', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

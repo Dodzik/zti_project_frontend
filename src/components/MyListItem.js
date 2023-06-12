@@ -4,7 +4,7 @@ import React, {useState} from "react";
 
 async function deleteContact(request) {
     console.log(request)
-    return fetch('http://localhost:8080/contacts/delete/contact', {
+    return fetch('https://ztiprojectbackend-production.up.railway.app/contacts/delete/contact', {
         method: 'DELETE',
         headers: {
             'Content-Type': 'application/json'
