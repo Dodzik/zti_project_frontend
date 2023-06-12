@@ -64,7 +64,7 @@ function UserPanelScreen(context){
     const [profile, setProfile] = useState(false);
     const [myContacts, setMyContacts] = useState(false);
     const [allMyCalls, setAllMyCalls] = useState(false);
-    const [auth, setAuth] = useState(context.auth);
+    const [auth] = useState(context.auth);
 
     const [data , setData] = useState();
     const [loaded,setLoaded] = useState(false)

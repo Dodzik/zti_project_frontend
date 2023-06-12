@@ -1,5 +1,5 @@
 import './App.css';
-import {BrowserRouter as Router, Link, Route, Routes} from "react-router-dom";
+import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import React, {useState} from 'react';
 import LoggingScreen from "./screens/LoggingScreen";
 import RegistrationScreen from "./screens/RegistrationScreen";
